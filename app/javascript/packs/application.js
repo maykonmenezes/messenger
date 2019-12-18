@@ -20,6 +20,7 @@ import bulmaQuickview from 'bulma-quickview/src/js'
 
 document.addEventListener('turbolinks:load', function() {
   let quickviews = bulmaQuickview.attach()
+
   const fileInput = document.querySelectorAll('input[type=file].file-input')
   fileInput.forEach(input => {
     input.onchange = () => {

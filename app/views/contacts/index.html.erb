@@ -14,11 +14,11 @@
           <% end %>
         </div>
         <div class="column is-three-fifths">
-          <%= contact.record.name %>
+          <%= link_to contact.record.name, chat_path(contact.record) %>
         </div>
         <div class="column is-one-fifth has-text-centered">
           <%= link_to contact, method: :delete do %>
-            <i style="font-size: 1em;" class="fas fa-trash-alt has-text-white-ter"></i>
+            <i style="font-size: 1em;" class="fas fa-trash-alt has-text-write-ter"></i>
           <% end %>
         </div>
       </div>
@@ -27,5 +27,5 @@
 </div>
 
 <%= link_to new_contact_path, class: "button is-success fab-button" do %>
-  <i class="fas fa-plus has-text-white-text"></i>
+  <i class="fas fa-plus has-text-write-text"></i>
 <% end %>
